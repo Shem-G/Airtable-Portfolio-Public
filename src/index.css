@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100%;
+}
+
+html, body, #app, #app>div {
+  height: 100%
+}
+
+[data-reactroot] 
+        {height: 100% !important; }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.bg-grid {
+  background: #fff url("components/img/genesis_grid.png") repeat scroll 0 0;
+  animation: animatedBackground 500s linear infinite;
+}
+
+.project-list {
+font-size: 1.1em;
+}
+
+.project-list:hover {
+  background: #e2e2e2;
+  }
+
+.hidden{
+  display:none;
+}
+
+.round-img {
+  width: 3em;
+  height: 3em;
+  clip-path: circle(50% at 50% 50%);
+}
+
+a:link{ 
+  text-decoration: none;
+}
+
+.list-p{
+  font-size: 1.1em;
+}
+
+.emoji-p{
+  font-size: 1.5em;
+}
+
+
+.cont{
+  background-color: #f6f6f6;
+  padding-right: 1em;
+  padding-left: 1em;
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  margin-top: 3em;
+  height: 100%;
+}
+
+.head {
+  font-family: 'Poppins', sans-serif;
+  font-size: 4em;
+}
+
+
+.content-card {
+  animation: card-shrink 0.5s 1 forwards;
+  -webkit-animation: card-shrink 0.5s 1 forwards;
+}
+
+.black {
+  background-color: #1D2023;
+}
+
+.card-width{
+  width: 18rem;
+}
+
+.bg-col {
+  background-color: #f6f6f6;
+}
+
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+/*use negative width if you want it to flow right to left else and positive for left to right*/
+  to {
+    background-position: 10000px 0;
+  }
+}
