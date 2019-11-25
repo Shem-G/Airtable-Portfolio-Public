@@ -13,10 +13,12 @@ const ListEntry = props => {
         notes = entry.fields.notes ? entry.fields.notes : "No data found for notes"
         let emoji
         emoji = entry.fields.emoji ? entry.fields.emoji : "No data found for emoji"
-
+        let id = key;
         
         return ( 
+            
             <a className="text-dark w-100" href={url}>
+                <p hidden id={id}></p>
                 <div className="row border-bottom py-3 project-list">
 
                     <div className="col-auto px-3"><img className="round-img" src={imgurl} alt={title}></img>
